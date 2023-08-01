@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <title>Flipkart</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            width: 100%;
+            height: 37px;
+            background-color: rgb(40,115,240);
+            display: flex;
+            position: fixed;
+        }
+        #logo{
+            width: 80px;
+            height: 25px;
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+        #searchbar{
+            width: 400px;
+            height: 27px;
+            margin-top: 5px;
+            margin-left: 8px;
+            padding-left: 10px;
+            font-size: 10px;
+        }
+        .leftnav{
+            display: flex;
+
+        }
+        .fa-search{
+            margin-top: 10px;
+            color: rgb(40,115,240);
+            margin-left: -26px;
+        }
+        .rightnav{
+            margin-left: 70px;
+        }
+        .rightnav ul {
+            display: flex;
+        }
+        .rightnav ul li{
+            list-style: none;
+            color: white;
+            padding: 11px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .icons{
+            margin-top: 9px;
+            margin-left: -10px;
+            
+        }
+        .fa-2xs{
+            color: white;
+        }
+        .icons2{
+            margin-top: 10px;
+            margin-left: -10px;
+            
+        }
+        #cartimg{
+            width: 20px;
+            height: 20px;
+            margin-left: 13px;
+            position: absolute;
+            margin-top: 7px;
+        }
+        #cart{
+            margin-left: 22px;
+        }
+        .categories{
+            width: 100%;
+            height: 120px;
+            background-color: white;
+        }
+        .images img{
+            margin-top: 45px;
+            margin-left: 35px;
+            height: 50px;
+            width: 50px;
+            right: 20px;
+            left: 20px;
+            
+        }
+        .images span{
+            color: black;
+            padding-left: 40px;
+            font-size: 12px;
+            font-weight: bold;
+
+        }
+    .categories{
+        display: flex;
+        
+    }
+    .names{
+        padding-left: 15px;
+    }
+    .mainsection{
+        width: 100%;
+        height: 35vh;
+        background-color: rgb(240,243,246);
+    }
+    .imagechange{
+        width: 100%;
+        height: 100px;
+
+    }
+    .imagechange img{
+        width: 970px;
+        margin-left: 5px;
+        margin-top: 9px;
+    }
+    .slider{
+        width: 35px;
+        height: 70px;
+        background-color: white;
+        position: absolute;
+        margin-top: -120px;
+        margin-left: 5px;
+    }
+    .slider2{
+        width: 35px;
+        height: 70px;
+        background-color: white;
+        position: absolute;
+        margin-top: -120px;
+        margin-left: 940px;
+    }
+    .sliderarrow{
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    .products{
+        width: 970px;
+        height: 250px;
+   
+        margin-left: 5px;
+        
+        background-color: white;
+        
+    }
+    .prodimg img{
+        width: 180px;
+        height: 100px;
+        margin-top: 150px;
+        position: absolute;
+    }
+    .prodimg span{
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 15px;
+    }
+    #viewall{
+        position: absolute;
+        margin-top: 105px;
+        margin-left: 42px;
+        background-color: rgb(40,115,240);
+        width: 70px;
+        height: 25px;
+        color: white;
+        border: none;
+        border-radius: 2px;
+    }
+    .prodimg2 img{
+        width: 140px;
+        margin-left: 15px;
+        margin-top: 20px;
+        height: 150px;
+        
+    }
+    .products{
+        display: flex;
+    }
+    .shop{
+        display: flex;
+        margin-left: 175px;
+        padding-left: 5px;
+    }
+    .prodimg2 span{
+        position: absolute;
+        margin-left: -130px;
+        margin-top: 180px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    #shopnow{
+        margin-top: 200px;
+        margin-left: -100px;
+      color: rgb(56,142,60);
+    }
+    #shopnow2{
+        margin-top: 220px;
+        margin-left: -120px;
+        color: rgb(122,122,122);
+        font-size: 10px;
+
+    }
+   .prodimg2{
+    padding-left: 5px;
+   }
+   body{
+    background-color: rgb(240,243,246);
+   }
+   .products2{
+    margin-top: 10px;
+   }
+   .nudes span{
+    margin-left: -100px;
+   }
+   footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(24,35,54);
+   }
+   footer {
+    display: flex;
+    color: white;
+   }
+   footer ul{
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 11px;
+    padding-top: 10px;
+   }
+   footer ul li{
+    padding-top: 5px;
+   }
+   #ul{
+    color: rgb(122,122,122);
+  
+   }
+   #phone{
+    color: dodgerblue;
+   }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="leftnav">
+            <img id="logo" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fk-plus_3b0baa.png" alt="">
+            <input id="searchbar" type="search" placeholder="Search for products, brands and more">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="rightnav">
+            <ul>
+                <li>Sahil</li> <span class="icons"><i class="fa-solid fa-chevron-down fa-2xs"></i></span>
+                <li>Become a Seller</li>
+                <li>More</li><span class="icons2"><i class="fa-solid fa-chevron-down fa-2xs"></i></span>
+                <span><img id="cartimg" src="cart-15-xxl.png" alt=""></span> <li id="cart">Cart</li>
+            </ul>
+        </div>
+    </div>
+    <div class="categories">
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt=""><span class="names">Grocery</span>
+       
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt=""><span class="names">Mobiles</span>
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" alt=""><span class="names">Fashion</span>
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt=""><span class="names">Electronics</span>
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt=""><span class="names">Home</span>
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt=""><span class="names">Appliances</span>
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt=""><span class="names">Travel</span>
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt=""><span class="names">Beauty</span>
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt=""><span class="names">Toys</span>
+      </div>
+      <div class="images">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100" alt=""><span class="names">Grocery</span>
+      </div>
+    </div>
+    <div class="mainsection">
+    <div class="imagechange">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/844/140/image/981db090154dcd81.jpg?q=50" alt="">
+        <div class="slider">
+            <i class="sliderarrow fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="slider2">
+            <i class="sliderarrow fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+   
+</div>
+<div class="products">
+    <div class="prodimg">
+      
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg" alt=""><span id="start"><h2>&nbsp;&nbsp;&nbsp; Best of <br> Electronics</h2></span><button id="viewall">View all</button>
+    </div>
+    <div class="shop">
+    <div class="prodimg2">
+      <img src="https://rukminim1.flixcart.com/image/400/400/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    <div class="prodimg2">
+        <img src="https://rukminim1.flixcart.com/image/400/400/xif0q/printer/s/8/d/-original-imafkykednshkhx5.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    <div class="prodimg2">
+        <img src="https://rukminim1.flixcart.com/image/400/400/xif0q/power-bank/j/i/v/power-bank-dx09-20000-mah-20000-dx09-20k-callmate-original-imagn22tuac3hqnz.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    <div class="prodimg2">
+        <img src="https://rukminim1.flixcart.com/image/400/400/l5ld8y80/monitor/l/k/s/-original-imagg897ufhyvwqq.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    <div class="prodimg2">
+        <img src="https://rukminim1.flixcart.com/image/400/400/kx9as280/monitor/d/o/d/vg270s-full-hd-27-um-hv0si-s01-acer-original-imag9ryu4ujcphzh.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    </div>
+    
+  </div>
+  <div class="products products2">
+    <div class="prodimg">
+      
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg" alt=""><span id="start"><h2> Beauty, Food<br> Toys & more</h2></span><button id="viewall">View all</button>
+    </div>
+  <div class="shop">
+    <div class="prodimg2">
+      <img src="https://rukminim1.flixcart.com/image/400/400/kz5vwy80/helmet/o/4/k/-original-imagb8azfdthjhqr.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    <div class="prodimg2">
+        <img src="https://rukminim1.flixcart.com/image/400/400/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    <div class="prodimg2">
+        <img src="https://rukminim1.flixcart.com/image/400/400/jlph9jk0/cycle/h/f/k/skyper-26t-sskp26bk0001-16-hero-original-imaf8ru5xysfgtmx.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    <div class="prodimg2">
+        <img src="https://rukminim1.flixcart.com/image/400/400/kl5hh8w0/puzzle/g/n/g/60-wooden-earth-jigsaw-puzzle-60-pcs-webby-original-imagyc8hsdztzdzb.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    <div class="prodimg2">
+        <img src="https://rukminim1.flixcart.com/image/400/400/kebpqq80/musical-keyboard/j/h/h/37-keys-nj-fashion-original-imafvyhrjeuah2ge.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    </div>
+  </div>
+  <div class="products products2">
+    <div class="prodimg">
+      
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg" alt=""><span id="start"><h2>Top Selection</h2></span><button id="viewall">View all</button>
+    </div>
+  <div class="shop">
+    <div class="prodimg2 nudes">
+      <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/headphone/b/a/o/enco-air3-pro-oppo-original-imagqre9rpzrheh3.jpeg?q=70" alt=""><span>Oppo Headset</span><span id="shopnow">Shop Now</span><span id="shopnow2">Grab or Gone</span>
+    </div>
+    <div class="prodimg2 nudes">
+        <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/headphone/b/a/o/enco-air3-pro-oppo-original-imagqre9rpzrheh3.jpeg?q=70" alt=""><span>Oppo Headset</span><span id="shopnow">Shop Now</span><span id="shopnow2">Grab or gone</span>
+    </div> 
+    <div class="prodimg2 nudes">
+        <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/headphone/b/a/o/enco-air3-pro-oppo-original-imagqre9rpzrheh3.jpeg?q=70" alt=""><span>Oppo Headset</span><span id="shopnow">Shop Now</span><span id="shopnow2">Grab or Gone</span>
+    </div>
+    <div class="prodimg2 ">
+        <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/headphone/b/a/o/enco-air3-pro-oppo-original-imagqre9rpzrheh3.jpeg?q=70" alt=""><span>Top mirrorless cameras</span><span id="shopnow">Shop Now</span><span id="shopnow2">Canon, sony, Fujifilm</span>
+    </div>
+    
+    </div>
+  </div>
+  <footer>
+<ul><span id="ul">About</span>
+    <li>Contact Us</li>
+    <li>About Us</li>
+    <li>Careers</li>
+    <li>Flipkart stories</li>
+    <li>Press</li>
+    <li>Flipkart Wholesale</li>
+    <li>Corporate Information</li>
+</ul>
+<ul><span id="ul">Help</span>
+    <li>Payments</li>
+    <li>Shipping</li>
+    <li>Cancellation & Returns</li>
+    <li>FAQ</li>
+    <li>Report</li>
+</ul>
+<ul><span id="ul">Consumer Policy</span>
+    <li>Return Policy</li>
+    <li>Terms of use</li>
+    <li>Security</li>
+    <li>Privacy</li>
+    <li>Sitemap</li>
+    <li>Grievance</li>
+    
+</ul>
+<ul><span id="ul">Social</span>
+    <li>Facebook</li>
+    <li>Twitter</li>
+    <li>Youtube</li>
+    
+</ul>
+<ul><span id="ul">Mail us</span>
+    <li>Flipkart Internet Private Limited,
+        </li>
+    <li>Buildings Alyssa, Begonia &</li>
+    <li>Clove Embassy Tech Village,</li>
+    <li> Outer Ring Road, Devarabeesanahalli Village,</li>
+    <li>  Bengaluru, 560103,</li>
+    <li> Karnataka, India
+    </li>
+</ul>
+<ul><span id="ul">Registered Office Address</span>
+    <li>Flipkart Internet Private Limited,</li>
+    <li>Buildings Alyssa, Begonia &</li>
+    <li>Clove Embassy Tech Village,</li>
+    <li> Outer Ring Road, Devarabeesanahalli Village,</li>
+    <li>  Bengaluru, 560103,</li>
+    <li>    Karnataka, India
+    </li>
+    <li>CIN : U51109KA2012PTC066107</li>
+    <li> Telephone: <span id="phone">044-45614700</span> </li>
+</ul>
+  </footer>
+</body>
+</html>
